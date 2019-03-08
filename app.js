@@ -56,6 +56,14 @@ function startGame() {
         card.classList.add('card');  
         card.innerHTML = `<i class='${img}'></i>`;
         container.appendChild(card);
+        
+        setTimeout(function() {
+            card.classList.add('open', 'show', 'disable')
+        },500)
+    
+        setTimeout(function() {
+            card.classList.remove('open', 'show', 'disable')
+        },2500)
 
     
         // adds click and instructions to each card
