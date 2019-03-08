@@ -214,7 +214,7 @@ function gameOver() {
         setTimeout(function showModal() {
             popUp.style.display = 'block';        //change display class to block
             clearInterval(interval);              //stops counter
-            winInfo.innerHTML = `<p>Good job, it took you ${chancesTaken} MOVES and ${counter} SECONDS
+            winInfo.innerHTML = `<p>It took you (${chancesTaken} MOVES) and (${counter} SECONDS)
             to finish the game. Think you can do better?</p>`;                                  // How the player performed
 
             if(chancesTaken <= 18) {
